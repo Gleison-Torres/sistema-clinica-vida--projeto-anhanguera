@@ -9,7 +9,7 @@ pacientes = []  # Lista para armazenar os dicionários de pacientes
 
 
 def cadastrar_paciente():
-    print(verde + "--- Cadastro de Paciente ---" + cor)
+    print(f"\n{verde + 5* '==='} Cadastro de Paciente {5* '===' + cor}\n")
 
     nome = input("Nome do paciente: ").strip().title()
 
@@ -26,7 +26,7 @@ def cadastrar_paciente():
     paciente = {"nome": nome, "idade": idade, "telefone": telefone}
     pacientes.append(paciente)
 
-    print("Paciente cadastrado com sucesso!")
+    print(f"\n{verde + 5* '==='} Paciente cadastrado com sucesso! {5* '===' + cor}\n")
 
 
 def ver_estatisticas():
@@ -72,9 +72,9 @@ def listar_pacientes():
     print()
 
 
-# Loop principal do sistema
+# Menu principal do sistema
 while True:
-    print(f'{verde + 10* "==="} SISTEMA CLÍNICA VIDA+ {10 * "===" + cor}\n')
+    print(f'{verde + 5* "==="} SISTEMA CLÍNICA VIDA+ {5 * "===" + cor}\n')
     print(roxo + "1. Cadastrar paciente" + cor)
     print(roxo + "2. Ver estatísticas" + cor)
     print(roxo + "3. Buscar paciente" + cor)
